@@ -1,5 +1,5 @@
 
-# AI Driven Context Detection for Comprehensive Surveillance
+# AI Driven Context Detection for Surveillance
 
 ![Project Badge](https://img.shields.io/badge/Final_Year_Project_May,_2025-blueviolet)  
 
@@ -66,7 +66,13 @@ There is an need for AI-driven, multimodal surveillance that goes beyond passive
 | **Architecture** | `Unimodal Attention + Cross-Modality Attention` |
 | **Final Output** | Passed into `LLaMA 3.1b` for natural-language context generation |
 
+---
+
+## WorkFlow
+
 ![image](https://github.com/user-attachments/assets/dcdfc7b9-5b64-4895-8d71-040e693b22a3)
+
+---
 
 ##  Model Accuracy
 
@@ -77,7 +83,7 @@ There is an need for AI-driven, multimodal surveillance that goes beyond passive
   
 ---
 
-## 🏗️ System Architecture
+##  System Architecture
 
 - Input: 10s audio-video stream (any resolution or noise level).
 - Divided into **5 chunks of 2s** (our context window).
@@ -88,15 +94,13 @@ There is an need for AI-driven, multimodal surveillance that goes beyond passive
 
 ---
 
-## 📸 Output UI (Streamlit)
+##  Output UI (Streamlit)
 
 >![image](https://github.com/user-attachments/assets/30e47f79-c99e-44e7-9181-4d6a0d574110)
 
-
-
 ---
 
-## 📁 Folder Structure
+## Folder Structure
 
 ```bash
 ├── models/
@@ -112,27 +116,116 @@ There is an need for AI-driven, multimodal surveillance that goes beyond passive
 
 ---
 
-## 🚀 To Run the Project
+##  How to Run the Project
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your-repo/ai-context-surveillance.git
-   cd ai-context-surveillance
-   ```
+###  Clone the Repository
 
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-   ```
-
-3. Start Streamlit app:
-   ```bash
-   streamlit run streamlit_ui/app.py
-   ```
+```bash
+git clone https://github.com/syed-azim-git/AI_Indoor_Surveillance.git
+cd AI_Indoor_Surveillance
+```
 
 ---
 
-## 🤖 Future Scope
+###  Cloud Setup with JarvisLabs
+
+We use [JarvisLabs](https://jarvislabs.ai/) to run GPU computations on the cloud (e.g., RTX5000).
+
+####  Generate SSH Key
+
+On your local machine:
+
+```bash
+ssh-keygen -t rsa -b 4096 -C "samplemail@.email.com"
+```
+
+- When prompted for **file location**, press `Enter`
+- When prompted for **passphrase**, press `Enter`
+
+Output:
+```
+Your public key has been saved in /c/Users/Comp/.ssh/id_rsa.pub
+```
+
+Copy the contents of the `id_rsa.pub` file and add it to your **JarvisLabs SSH agent** via their dashboard.
+
+---
+
+####  Launch and Start Your Cloud Instance
+
+- Create and start a **cloud instance** with an **RTX5000 GPU**
+- Note down the **SSH port number** (example: `11114`)
+
+---
+
+####  Upload Required Files
+
+All files under the `cloud/` directory of this repo must be copied to the cloud.
+
+
+---
+
+###  Local Setup
+
+####  Save Your Videos
+
+Save all recorded videos into a directory named: Videos/
+
+
+####  Extract Video Features
+
+Run the feature extraction scripts from the repo on your local machine.  
+Save the resulting feature files in a directory named: Features/
+
+
+---
+
+###  Update `app.py`
+
+In the `app.py` file, make the following changes:
+
+- Update the paths to:
+  - `Videos/` directory
+  - `Features/` directory
+- Replace the placeholder values in the `scp` and `ssh` commands with:
+  - Your SSH port (e.g., `11114`)
+  - Your `.h5` file paths
+
+---
+
+###  Run the App
+
+On your local machine:
+
+```bash
+streamlit run app.py
+```
+
+---
+
+##  Folder Structure
+
+```
+AI_Indoor_Surveillance/
+│
+├── cloud/                    # Files to be uploaded to JarvisLabs
+├── Videos/                   # Store recorded input videos here (locally)
+├── Features/                 # Store extracted .h5 feature files here (locally)
+├── app.py                    # Streamlit UI app
+├── feature_extraction/       # Local scripts for video feature extraction
+├── setup_ai_surveillance.sh  # Setup script (optional)
+└── README.md                 # You're here!
+```
+
+##  Author
+
+[Syed Azim](https://www.linkedin.com/in/i-syed-azim/) | [Shreyas Sai](https://www.linkedin.com/in/shreyassai/)   
+Final Year, ECE  
+SSN College of Engineering  
+
+---
+
+##  Future Scope
 
 - Hardware Implementation
 
