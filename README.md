@@ -70,6 +70,11 @@ There is an need for AI-driven, multimodal surveillance that goes beyond passive
 
 ##  Model Accuracy
 
+- Model Accuracy is 92.3%
+
+![image](https://github.com/user-attachments/assets/c0a226a9-ec6c-4186-a359-0e0a14188d09)
+
+  
 ---
 
 ## 🏗️ System Architecture
@@ -85,7 +90,9 @@ There is an need for AI-driven, multimodal surveillance that goes beyond passive
 
 ## 📸 Output UI (Streamlit)
 
-> _📷 Insert image of Streamlit UI here_
+>![image](https://github.com/user-attachments/assets/30e47f79-c99e-44e7-9181-4d6a0d574110)
+
+
 
 ---
 
@@ -98,8 +105,7 @@ There is an need for AI-driven, multimodal surveillance that goes beyond passive
 │   └── llama_integration/
 ├── data/
 │   ├── kinetics_tiny_curated/
-├── streamlit_ui/
-├── main.py
+├── app.py
 ├── README.md
 └── requirements.txt
 ```
@@ -128,15 +134,13 @@ There is an need for AI-driven, multimodal surveillance that goes beyond passive
 
 ## 🤖 Future Scope
 
-- Integration with **IoT sensors** for more modalities.
-- Deploy as **cloud-native microservices**.
-- Expand dataset for **outdoor environments** and **multi-room surveillance**.
+- Hardware Implementation
 
 ---
 
-## 📜 Acknowledgements
+## Acknowledgements
 
-This project was developed as part of the Final Year Engineering Capstone by:
+This project was developed as part of the Final Year Engineering Project by:
 
 **Shreyas Sai R** and **Syed Azim**  
 **Mentored by:** *Dr. P. Vijayalakshmi*  
