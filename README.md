@@ -162,6 +162,9 @@ Copy the contents of the `id_rsa.pub` file and add it to your **JarvisLabs SSH a
 
 All files under the `cloud/` directory of this repo must be copied to the cloud.
 
+**Tip:**  To upload files to the cloud use:
+- Jupyter Notebook in Jarvis Lab (or)
+- FTP for SSH, eg. FireZilla, Username: `root`
 
 ---
 
