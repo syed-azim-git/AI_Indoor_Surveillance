@@ -165,6 +165,8 @@ All files under the `cloud/` directory of this repo must be copied to the cloud.
 **Tip:**  To upload files to the cloud use:
 - Jupyter Notebook in Jarvis Lab (or)
 - FTP for SSH, eg. FireZilla, Username: `root`
+![image](https://github.com/user-attachments/assets/e4437651-7cda-4005-bb2d-ebc690000174)
+
 
 ---
 
