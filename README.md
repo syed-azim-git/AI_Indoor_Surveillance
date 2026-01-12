@@ -3,7 +3,7 @@
 
 ![Project Badge](https://img.shields.io/badge/AI_Surveillance-blueviolet)  
 
-*By: Shreyas Sai R and Syed Azim * 
+*By: Shreyas Sai R and Syed Azim* 
 
 ---
 
