@@ -11,17 +11,9 @@ st.markdown("## AI-Driven Context Detection for Comprehensive Surveillance")
 # Acknowledgments
 with st.expander("📌 Acknowledgments", expanded=True):
     st.markdown("""
-**Final Year Project by**  
-Shreyas Sai R (3122213002096)  
-Syed Azim (3122213002110)  
-
-**Mentored by**  
-Dr. P. Vijayalakshmi  
-
-**Guided by**  
-Dr. N. Venkateswaran  
-Dr. S. Karthie  
-""")
+**Project by**  
+Shreyas Sai R
+Syed Azim )
 
 # Layout
 left_col, right_col = st.columns([5, 7])
