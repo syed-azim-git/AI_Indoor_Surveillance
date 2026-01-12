@@ -1,9 +1,9 @@
 
 # AI Driven Context Detection for Surveillance
 
-![Project Badge](https://img.shields.io/badge/Final_Year_Project_May,_2025-blueviolet)  
+![Project Badge](https://img.shields.io/badge/AI_Surveillance-blueviolet)  
 
-*By: Shreyas Sai R and Syed Azim  – SSN College of Engineering* 
+*By: Shreyas Sai R and Syed Azim * 
 
 ---
 
@@ -224,23 +224,5 @@ AI_Indoor_Surveillance/
 
 ##  Author
 
-[Syed Azim](https://www.linkedin.com/in/i-syed-azim/) | [Shreyas Sai](https://www.linkedin.com/in/shreyassai/)   
-Final Year, ECE  
-SSN College of Engineering  
+[Syed Azim](https://www.linkedin.com/in/i-syed-azim/) | [Shreyas Sai](https://www.linkedin.com/in/shreyassai/)     
 
----
-
-##  Future Scope
-
-- Hardware Implementation
-
----
-
-## Acknowledgements
-
-This project was developed as part of the Final Year Engineering Project by:
-
-**Shreyas Sai R** and **Syed Azim**  
-**Mentored by:** *Dr. P. Vijayalakshmi*  
-Department of Electronics and Communication Engineering  
-SSN College of Engineering
